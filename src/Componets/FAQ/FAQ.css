@@ -1,0 +1,122 @@
+/* src/components/FAQ.css */
+.faq {
+  background-color: #050407;
+  color: #f8f7f6;
+  padding: 2rem 0; /* Reducido padding */
+}
+
+.faq-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  padding: 0 15px; /* Padding ajustado */
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border: 1px solid #331714;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #331714;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #ff4e2a;
+}
+
+.faq-question h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  margin: 0;
+  word-break: break-word;
+  flex: 1; /* Ocupa espacio disponible */
+}
+
+.faq-question span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 1rem; /* Espacio entre texto e ícono */
+}
+
+.faq-answer {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: #f8f7f6;
+  color: #050407;
+  display: block;
+  transition: max-height 0.3s ease;
+}
+
+.faq-cta {
+  display: block;
+  padding: 0.8rem 1.5rem;
+  background-color: #ff4e2a;
+  color: #f8f7f6;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 250px; /* Límite profesional */
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.faq-cta:hover {
+  background-color: #331714;
+}
+
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 1.8rem;
+  }
+
+  .faq-question h3 {
+    font-size: 1rem;
+  }
+
+  .faq-question {
+    padding: 0.8rem;
+  }
+
+  .faq-answer {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .faq-question span {
+    font-size: 1.2rem;
+  }
+
+  .faq-cta {
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .faq-question h3 {
+    max-width: 90%;
+  }
+
+  .faq-cta {
+    width: auto;
+  }
+}

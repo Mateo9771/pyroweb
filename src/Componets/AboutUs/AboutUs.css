@@ -1,0 +1,89 @@
+/* src/components/AboutUs.css */
+.about-us{
+  background-color: #050407;
+  color: #f8f7f6;
+  padding: 2rem o;
+  padding-top: 2rem;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.about-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  max-width: 100%;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.about-cta {
+  display: block;
+  padding: 0.8rem 1.5rem;
+  background-color: #ff4e2a;
+  color: #f8f7f6;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+.about-cta:hover {
+  background-color: #331714;
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .about-image-placeholder {
+    height: 180px;
+  }
+
+  .about-cta {
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .about-description {
+    max-width: 700px;
+    text-align: left;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 2rem;
+  }
+
+  .about-cta {
+    width: auto;
+  }
+}

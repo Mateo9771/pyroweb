@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pyroweb.com.ar/sitemap.xml
